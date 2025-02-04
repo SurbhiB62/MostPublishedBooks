@@ -66,11 +66,13 @@ sf org open --target-org ScratchOrg
    
    
    a.Assign permission set "Integration Permission" to the user
+
+   
    b.Search for Publish Book Result in the app manager in the setup and edit it to assign the system administrator profile to it
 
 
 
-3. Schedule the Apex Class
+4. Schedule the Apex Class
 Navigate to Setup > Apex Classes
 Schedule the class MostPublishedBooksScheduler for execution
 
