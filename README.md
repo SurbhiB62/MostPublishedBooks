@@ -1,6 +1,6 @@
 MostPublishedBooks
 
-Overview
+**Overview**
 
 This repository contains a Salesforce implementation for a schedulable Apex class that makes a callout to an external endpoint and a Lightning Web Component (LWC) that subscribes to a platform event and displays the results.
 
