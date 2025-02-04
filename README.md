@@ -4,7 +4,7 @@ MostPublishedBooks
 
 This repository contains a Salesforce implementation for a schedulable Apex class that makes a callout to an external endpoint and a Lightning Web Component (LWC) that subscribes to a platform event and displays the results.
 
-Features
+**Features**
 
 Schedulable Apex Class: Makes a callout to https://eoheai3ashoyzos.m.pipedream.net to fetch book data.
 
@@ -18,7 +18,7 @@ Deployment Instructions: Guide to deploy the solution in a Salesforce Scratch Or
 
 End-to-End Testing: Instructions for testing the functionality within a Scratch Org.
 
-Installation & Deployment
+**Installation & Deployment**
 
 Prerequisites
 
@@ -30,7 +30,7 @@ A Salesforce Dev Hub with Scratch Org enabled
 
 Node.js & npm (for LWC development)
 
-Steps
+**Steps**
 
 1. Authenticate Dev Hub
 
@@ -62,9 +62,23 @@ Post Deployment Steps:
 sf org open --target-org ScratchOrg
 
 2.Go to logged in user record and perform below steps:
+   
+   
    a.Assign permission set "Integration Permission" to the user
    b.Search for Publish Book Result in the app manager in the setup and edit it to assign system administrator profile to it
+
+
 
 3.Schedule the Apex Class
 Navigate to Setup > Apex Classes
 Schedule the class MostPublishedBooksScheduler for execution
+
+
+
+
+**Manual Testing Steps**
+
+1. Open the app Publish Book Result from the app launcher
+2. Execute the below script in the anonymous window of the developer console
+   PublishedBooksHandler.getPublishedBooksDetails();
+3.Verify expected results in the app which was opened in step 1
