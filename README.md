@@ -10,7 +10,7 @@ Schedulable Apex Class: Makes a callout to https://eoheai3ashoyzos.m.pipedream.n
 
 Platform Event: Publishes MostPublishedBooks__e containing a sorted list of books where the edition size exceeds 600,000 copies.
 
-Lightning Web Component (LWC): Subscribes to MostPublishedBooks__e using lightning/empApi and displays the book list in a user-friendly format.
+Lightning Web Component (LWC): This component subscribes to MostPublishedBooks__e using lightning/empApi and displays the book list in a user-friendly format.
 
 Unit Tests: Covers the most critical functionality for Apex and LWC components.
 
@@ -58,18 +58,18 @@ sf project deploy start --target-org BillieScratchOrg
 
 Post Deployment Steps:
 
-1.Open the Scratch Org
+1. Open the Scratch Org
 sf org open --target-org ScratchOrg
 
-2.Go to logged in user record and perform below steps:
+2. Go to the logged-in user record and perform the below steps:
    
    
    a.Assign permission set "Integration Permission" to the user
-   b.Search for Publish Book Result in the app manager in the setup and edit it to assign system administrator profile to it
+   b.Search for Publish Book Result in the app manager in the setup and edit it to assign the system administrator profile to it
 
 
 
-3.Schedule the Apex Class
+3. Schedule the Apex Class
 Navigate to Setup > Apex Classes
 Schedule the class MostPublishedBooksScheduler for execution
 
@@ -77,8 +77,9 @@ Schedule the class MostPublishedBooksScheduler for execution
 
 
 **Manual Testing Steps**
+Assuming deployment is successful and post-deployment steps are done, we can see the expected output immediately even without scheduling the Apex Class by the below steps:
 
 1. Open the app Publish Book Result from the app launcher
 2. Execute the below script in the anonymous window of the developer console
    PublishedBooksHandler.getPublishedBooksDetails();
-3.Verify expected results in the app which was opened in step 1
+3. Verify expected results in the app which was opened in Step 1
