@@ -74,7 +74,7 @@ sf org open --target-org ScratchOrg
 
 4. Schedule the Apex Class
 Navigate to Setup > Apex Classes
-Schedule the class MostPublishedBooksScheduler for execution
+Schedule the class PublishedBooksScheduler for execution
 
 
 
