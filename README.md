@@ -6,6 +6,7 @@ This repository contains a Salesforce implementation for a schedulable Apex clas
 
 **Features**
 
+
 Schedulable Apex Class: Makes a callout to https://eoheai3ashoyzos.m.pipedream.net to fetch book data.
 
 Platform Event: Publishes MostPublishedBooks__e containing a sorted list of books where the edition size exceeds 600,000 copies.
@@ -77,6 +78,8 @@ Schedule the class MostPublishedBooksScheduler for execution
 
 
 **Manual Testing Steps**
+
+
 Assuming deployment is successful and post-deployment steps are done, we can see the expected output immediately even without scheduling the Apex Class by the below steps:
 
 1. Open the app Publish Book Result from the app launcher
