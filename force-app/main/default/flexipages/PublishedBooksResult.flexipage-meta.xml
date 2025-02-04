@@ -12,7 +12,7 @@
     </flexiPageRegions>
     <masterLabel>PublishedBooksResult</masterLabel>
     <template>
-        <name>runtime_commerce_oci:homeTemplateOneRegion</name>
+        <name>industries_common:homeTemplateOneRegion</name>
     </template>
     <type>HomePage</type>
 </FlexiPage>
